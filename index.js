@@ -23,14 +23,18 @@ class UtilShard extends Base {
   }
 
   getStrRingIx (s, n) {
-    const k = `ring-${s}`
-    
+    return this.getRingIx(this.getStrVal(s), n)
+  }
+
+  getStrVal (s) {
+    const k = `s2i-${s}`
+
     let v = this.mem[k]
     if (v !== undefined) {
       return v
     }
 
-    v = this.mem[k] = this.getRingIx(Math.abs(CRC.str(s)), n)
+    v = this.mem[k] = Math.abs(CRC.str(s))
     return v
   }
 }
