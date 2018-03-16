@@ -1,0 +1,33 @@
+{
+  "name": "bfx-facs-util-shard",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Bitfinex Util Shard Facility",
+  "author": {
+    "name": "prdn",
+    "email": "paolo@bitfinex.com"
+  },
+  "keywords": [
+    "bitfinex"
+  ],
+  "dependencies": {
+    "async": "~2.4.0",
+    "lodash": "~4.17.4"
+  },
+  "engine": {
+    "node": ">=6.0"
+  },
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfinexcom/bfx-facs-util-shard.git"
+  },
+  "homepage": "https://github.com/bitfinexcom/bfx-facs-util-shard",
+  "maintainers": [
+    {
+      "name": "prdn",
+      "email": "paolo@bitfinex.com"
+    }
+  ]
+}
