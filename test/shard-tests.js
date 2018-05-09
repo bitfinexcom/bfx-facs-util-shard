@@ -2,10 +2,10 @@
 /* eslint-env mocha */
 
 const UtilShard = require('../')
-var assert = require('assert')
+const assert = require('assert')
 const CRC = require('crc-32')
 
-let utilShard = new UtilShard()
+const utilShard = new UtilShard()
 
 describe('UtilShard:getRingIx', () => {
   it('should return 0 when first parameter of getRingIx is null', () => {

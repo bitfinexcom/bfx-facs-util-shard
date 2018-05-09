@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "description": "Bitfinex Util Shard Facility",
+  "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run unit",
     "unit": "mocha",
