@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "private": false,
   "description": "Bitfinex Util Shard Facility",
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "unit": "mocha",
+    "lint": "standard"
+  },
   "author": {
     "name": "prdn",
     "email": "paolo@bitfinex.com"
@@ -11,8 +16,8 @@
     "bitfinex"
   ],
   "dependencies": {
-    "async": "~2.4.0",
-    "lodash": "~4.17.4"
+    "crc-32": "^1.2.0",
+    "bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git"
   },
   "engine": {
     "node": ">=6.0"
@@ -29,5 +34,9 @@
       "name": "prdn",
       "email": "paolo@bitfinex.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "standard": "^11.0.1"
+  }
 }
