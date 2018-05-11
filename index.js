@@ -1,7 +1,5 @@
 'use strict'
 
-const _ = require('lodash')
-const async = require('async')
 const CRC = require('crc-32')
 const Base = require('bfx-facs-base')
 
@@ -28,7 +26,6 @@ class UtilShard extends Base {
 
   getStrVal (s) {
     const k = `s2i-${s}`
-
     let v = this.mem[k]
     if (v !== undefined) {
       return v
