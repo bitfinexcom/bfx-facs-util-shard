@@ -29,7 +29,6 @@
     "type": "git",
     "url": "git+https://github.com/bitfinexcom/bfx-facs-util-shard.git"
   },
-  "homepage": "https://github.com/bitfinexcom/bfx-facs-util-shard",
   "maintainers": [
     {
       "name": "prdn",
