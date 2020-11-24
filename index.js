@@ -1,7 +1,7 @@
 'use strict'
 
-const CRC = require('crc-32')
 const Base = require('bfx-facs-base')
+const UtilShardLib = require('@bitfinexcom/lib-js-util-shard')
 
 class UtilShard extends Base {
   constructor (caller, opts, ctx) {
@@ -13,26 +13,19 @@ class UtilShard extends Base {
   }
 
   init () {
-    this.mem = {}
+    this.us = new UtilShardLib()
   }
 
-  getRingIx (v, n) {
-    return v && n ? v % n : 0
+  getRingIx (...args) {
+    return this.us.getRingIx.apply(this.us, args)
   }
 
-  getStrRingIx (s, n) {
-    return this.getRingIx(this.getStrVal(s), n)
+  getStrRingIx (...args) {
+    return this.us.getStrRingIx.apply(this.us, args)
   }
 
-  getStrVal (s) {
-    const k = `s2i-${s}`
-    let v = this.mem[k]
-    if (v !== undefined) {
-      return v
-    }
-
-    v = this.mem[k] = Math.abs(CRC.str(s))
-    return v
+  getStrVal (...args) {
+    return this.us.getStrVal.apply(this.us, args)
   }
 }
 

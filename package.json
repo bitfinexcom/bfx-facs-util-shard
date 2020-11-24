@@ -17,13 +17,12 @@
     "bitfinex"
   ],
   "dependencies": {
-    "crc-32": "^1.2.0",
+    "@bitfinexcom/lib-js-util-shard": "git+https://github.com/bitfinexcom/lib-js-util-shard.git",
     "bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git"
   },
   "engine": {
     "node": ">=6.0"
   },
-  "main": "index.js",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -36,6 +35,7 @@
     }
   ],
   "devDependencies": {
+    "crc-32": "^1.2.0",
     "mocha": "^5.1.1",
     "standard": "^11.0.1"
   }
